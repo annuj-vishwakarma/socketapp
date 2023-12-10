@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .messages {
+            height: calc(100%-32px);
+            width: 100%;
+            background-color: green;
+            padding: 7px;
+        }
+        
+        .messages .msg {
+            background-color: #fff;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="conversationArea">
+            <div class="messages"></div>
+
+        </div>
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script>
+        var socket = io();
+    </script>
+</body>
+
+</html>
